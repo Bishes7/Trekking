@@ -1,0 +1,145 @@
+/* Basic reset and styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #eaf0f6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styling with shadow */
+header {
+  background-color: #4a91e2c0;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 36px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for navigation */
+nav ul li a:hover {
+  color: #ffdd59;
+}
+
+/* Hero section with animation */
+.hero {
+  background: url("./mountain.jpg") no-repeat center center/cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.hero h1 {
+  font-size: 60px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* About section with shadow and hover effect */
+.about {
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  background-color: rgba(255, 68, 0, 0.712);
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 20px;
+  color: white;
+}
+
+/* Gallery styling with hover effects */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-left: 20rem;
+}
+
+/* Add shadow and zoom effect on hover */
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styling */
+footer {
+  background-color: #4a90e2;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+  margin: 0;
+  font-size: 18px;
+}
